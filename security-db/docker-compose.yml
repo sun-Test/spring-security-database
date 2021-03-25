@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:5.5.62
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'secdb01'
+      MYSQL_USER: 'secacc01'
+      MYSQL_PASSWORD: 'sun.123456'
+      MYSQL_ROOT_PASSWORD: 'sun.123456'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - mysql-db:/var/lib/mysql
+volumes:
+  mysql-db: 
+    driver: local # a volume will be created automatically
