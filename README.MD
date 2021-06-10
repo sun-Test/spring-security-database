@@ -9,3 +9,9 @@
 1. connection between the app and mysql-db
 2. enable and implemention of spring security
 3. jwt-application
+4. graphql
+
+## graphql
+1. graphql tools and graphql query resolver
+1. graphiql
+1. graphql endpoint gql, graphiql endpoint: giql

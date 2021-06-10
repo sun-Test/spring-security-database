@@ -20,9 +20,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
     @Override
         public void configure(HttpSecurity http) throws Exception {
             http.csrf().disable().antMatcher("/**")
-            .authorizeRequests()
-            .antMatchers(HttpMethod.GET, "/")
-            .permitAll().and().authorizeRequests().antMatchers("/quthenticate").permitAll();
+            .authorizeRequests().antMatchers(HttpMethod.POST, "/").permitAll().and()
+            .authorizeRequests().antMatchers("/quthenticate").permitAll();
         }
 
     @Override

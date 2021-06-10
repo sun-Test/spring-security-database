@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SecurityDbApplication<security-db>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.sunny.example.securitydb.SecurityDbApplication",
+            "projectName": "security-db",
+            "args": ""
+        }
+    ]
+}
